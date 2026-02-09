@@ -10,7 +10,6 @@
 #
 #
 # with open('file', 'r') as f:
-#     pass
 
 ##########################################################################
 '''
@@ -192,7 +191,13 @@ def display():
 for ele in display():
     print(ele)
 print('hello world')
-
+n =4
+for i in range (n):
+    print("* (n-i+1)+*(i-1))
+for i in range (n-2, -1+1)):
+    print("*" (n-i-1))
+    print()
+    
 
 
 
