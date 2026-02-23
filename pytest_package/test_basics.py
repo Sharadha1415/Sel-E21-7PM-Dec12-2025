@@ -227,18 +227,18 @@ Because the classname is not following the pytest rules
 
 ###################################################################################################
 
-# class TestSample:
-#
-#     def login(self):
-#         print("login executing")
-#
-#     def signup(self):
-#         print("signup executing")
-#
-#     def logout(self):
-#         print("logout executing")
-#
-# ## collected 0 items
+class TestSample:
+
+    def login(self):
+        print("login executing")
+
+    def signup(self):
+        print("signup executing")
+
+    def logout(self):
+        print("logout executing")
+
+## collected 0 items
 
 '''
 Because attributes are not following the rules

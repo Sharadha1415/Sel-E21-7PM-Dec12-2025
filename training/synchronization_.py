@@ -49,6 +49,8 @@ SYNCHRONIZATION :   Matching the speed of the webdriver to the web-application
 
 import time
 
+from selenium.common import NoSuchElementException
+
 # ## time.sleep()
 # from selenium import webdriver
 #
@@ -139,33 +141,33 @@ explicitly_wait
 # except:
 #     print("unsuccessfull login")
 
-###################################################################################################
-
-from selenium import webdriver
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions
-
-opts = webdriver.ChromeOptions()
-opts.add_experimental_option("detach", True)
-
-driver = webdriver.Chrome(opts)
-
-wait = WebDriverWait(driver, 10)
-
-driver.get("https://www.saucedemo.com/")
-time.sleep(2)
-
-driver.find_element("id", "user-name").send_keys("standard_user")
-time.sleep(1)
-driver.find_element("id", "password").send_keys("secret_sauce")
-time.sleep(1)
-driver.find_element("id", "login-button").click()
-
-try:
-    wait.until(expected_conditions.visibility_of_element_located(("xpath", '//span[text()="Products"]')))
-    print("successfull login")
-except:
-    print("unsuccessfull login")
+# ###################################################################################################
+#
+# from selenium import webdriver
+# from selenium.webdriver.support.ui import WebDriverWait
+# from selenium.webdriver.support import expected_conditions
+#
+# opts = webdriver.ChromeOptions()
+# opts.add_experimental_option("detach", True)
+#
+# driver = webdriver.Chrome(opts)
+#
+# wait = WebDriverWait(driver, 10)
+#
+# driver.get("https://www.saucedemo.com/")
+# time.sleep(2)
+#
+# driver.find_element("id", "user-name").send_keys("standard_user")
+# time.sleep(1)
+# driver.find_element("id", "password").send_keys("secret_sauce")
+# time.sleep(1)
+# driver.find_element("id", "login-button").click()
+#
+# try:
+#     wait.until(expected_conditions.visibility_of_element_located(("xpath", '//span[text()="Products"]')))
+#     print("successfull login")
+# except:
+#     print("unsuccessfull login")
 
 # ###################################################################################################
 #
@@ -209,26 +211,65 @@ except:
 
 ###################################################################################################
 
-## explicit_wait
+# ## explicit_wait
+#
+# from selenium import webdriver
+# from selenium.webdriver.support.ui import WebDriverWait
+# from selenium.webdriver.support import expected_conditions as EC
+#
+# opts = webdriver.ChromeOptions()
+# opts.add_experimental_option("detach", True)
+#
+# driver = webdriver.Chrome(opts)
+# wait = WebDriverWait(driver, 50)
+#
+# driver.get(r'C:\Users\Ramya\PycharmProjects\Sel-E21-Dec12-7PM\files_\progressbar.html')
+# time.sleep(2)
+#
+# driver.find_element("xpath", '//button[text()="Click Me"]').click()
+# wait.until(EC.visibility_of_element_located(("xpath", '//div[text()="100%"]')))
+# time.sleep(2)
+# driver.find_element("xpath", '//button[text()="Click Me"]').click()
+
+###################################################################################################
+
+'''
+fluent_wait :   A wait that waits for a maximum time
+                Checks condition at regular intervals
+                Ignores specific exceptions
+                Check every few seconds until element appears or timeout happens
+                Key Features:
+                    Polling frequency
+                    Timeout
+                    Exception handling
+                By default polling frequency is 5seconds
+'''
 
 from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support import expected_conditions
 
 opts = webdriver.ChromeOptions()
 opts.add_experimental_option("detach", True)
 
 driver = webdriver.Chrome(opts)
-wait = WebDriverWait(driver, 50)
 
-driver.get(r'C:\Users\Ramya\PycharmProjects\Sel-E21-Dec12-7PM\files_\progressbar.html')
+wait = WebDriverWait(driver, 10, poll_frequency=3, ignored_exceptions=[NoSuchElementException])
+
+driver.get("https://www.saucedemo.com/")
 time.sleep(2)
 
-driver.find_element("xpath", '//button[text()="Click Me"]').click()
-wait.until(EC.visibility_of_element_located(("xpath", '//div[text()="100%"]')))
-time.sleep(2)
-driver.find_element("xpath", '//button[text()="Click Me"]').click()
+driver.find_element("id", "user-name").send_keys("standard_user")
+time.sleep(1)
+driver.find_element("id", "password").send_keys("secret_sauce")
+time.sleep(1)
+driver.find_element("id", "login-button").click()
 
+try:
+    wait.until(expected_conditions.visibility_of_element_located(("xpath", '//span[text()="Products"]')))
+    print("successfull login")
+except:
+    print("unsuccessfull login")
 
 
 

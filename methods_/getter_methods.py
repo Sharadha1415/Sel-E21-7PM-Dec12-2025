@@ -224,19 +224,85 @@ screenshot  :   To take the screenshot of a webelement, we use screenshot()
 get_attribute and get_dom_attribute
 '''
 
-from selenium import webdriver
+# from selenium import webdriver
+#
+# opts = webdriver.ChromeOptions()
+# opts.add_experimental_option("detach", True)
+#
+# driver = webdriver.Chrome(opts)
+#
+# driver.get('https://demowebshop.tricentis.com/')
+# time.sleep(2)
+#
+# reg = driver.find_element('xpath', '//a[text()="Register"]')
+# print(reg.get_attribute("href"))            ## https://demowebshop.tricentis.com/register
+# print(reg.get_dom_attribute("href"))        ## /register
 
-opts = webdriver.ChromeOptions()
-opts.add_experimental_option("detach", True)
+########################################################################################
 
-driver = webdriver.Chrome(opts)
+'''
+get_property
+'''
+#
+# from selenium import webdriver
+#
+# opts = webdriver.ChromeOptions()
+# opts.add_experimental_option("detach", True)
+#
+# driver = webdriver.Chrome(opts)
+#
+# driver.get('https://www.myntra.com/')
+# time.sleep(2)
+#
+# home = driver.find_element('xpath', '//a[text()="Home"]')
+#
+# print(home.get_attribute('href'))           ## https://www.myntra.com/shop/home-living
+# print(home.get_property('href'))            ## https://www.myntra.com/shop/home-living
 
-driver.get('https://demowebshop.tricentis.com/')
-time.sleep(2)
+'''
+get_attribute("value")      --> Return attribute value from the HTML
+get_property("value")       --> Returns the value from the browser 
+'''
 
-reg = driver.find_element('xpath', '//a[text()="Register"]')
-print(reg.get_attribute("href"))            ## https://demowebshop.tricentis.com/register
-print(reg.get_dom_attribute("href"))        ## /register
+###################################################################################################
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

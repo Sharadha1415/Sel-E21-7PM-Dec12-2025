@@ -574,31 +574,31 @@ Parent to child -->    parent//child
     
 '''
 
-## EG1
-from selenium import webdriver
-
-opts = webdriver.ChromeOptions()
-opts.add_experimental_option("detach", True)
-
-driver = webdriver.Chrome(opts)
-
-driver.get('https://demowebshop.tricentis.com/')
-time.sleep(2)
-driver.find_element('xpath', '//div[@class="block block-category-navigation"]//a[contains(text(), "Books")]').click()
-
-##----------------------------------------------------------------------------------------------------
-
-## EG2
-from selenium import webdriver
-
-opts = webdriver.ChromeOptions()
-opts.add_experimental_option("detach", True)
-
-driver = webdriver.Chrome(opts)
-
-driver.get('https://www.amazon.in/')
-time.sleep(2)
-driver.find_element('xpath', '//div[@id="nav-search"]//input').send_keys('mobiles')
+# ## EG1
+# from selenium import webdriver
+#
+# opts = webdriver.ChromeOptions()
+# opts.add_experimental_option("detach", True)
+#
+# driver = webdriver.Chrome(opts)
+#
+# driver.get('https://demowebshop.tricentis.com/')
+# time.sleep(2)
+# driver.find_element('xpath', '//div[@class="block block-category-navigation"]//a[contains(text(), "Books")]').click()
+#
+# ##----------------------------------------------------------------------------------------------------
+#
+# ## EG2
+# from selenium import webdriver
+#
+# opts = webdriver.ChromeOptions()
+# opts.add_experimental_option("detach", True)
+#
+# driver = webdriver.Chrome(opts)
+#
+# driver.get('https://www.amazon.in/')
+# time.sleep(2)
+# driver.find_element('xpath', '//div[@id="nav-search"]//input').send_keys('mobiles')
 
 #########################################################################################################
 
@@ -606,21 +606,21 @@ driver.find_element('xpath', '//div[@id="nav-search"]//input').send_keys('mobile
 child to parent     :   child_element/parent::tagname_of_parent
 '''
 
-from selenium import webdriver
-
-opts = webdriver.ChromeOptions()
-opts.add_experimental_option("detach", True)
-
-driver = webdriver.Chrome(opts)
-
-driver.get('https://www.instagram.com/')
-time.sleep(2)
-
-# driver.find_element('xpath', '//input[@name="username"]/..')        ## goes back to one parent
-# driver.find_element('xpath', '//input[@name="username"]/../..')     ## goes back twice(parent of immediate parent)
+# from selenium import webdriver
+#
+# opts = webdriver.ChromeOptions()
+# opts.add_experimental_option("detach", True)
+#
+# driver = webdriver.Chrome(opts)
+#
+# driver.get('https://www.instagram.com/')
+# time.sleep(2)
+#
+# # driver.find_element('xpath', '//input[@name="username"]/..')        ## goes back to one parent
+# # driver.find_element('xpath', '//input[@name="username"]/../..')     ## goes back twice(parent of immediate parent)
 
 ##
-driver.find_element('xpath', '//input[@name="username"]/parent::label')     ## go back to the immediate parent only
+# driver.find_element('xpath', '//input[@name="username"]/parent::label')     ## go back to the immediate parent only
 
 #########################################################################################################
 
@@ -632,20 +632,20 @@ siblings    :   web_element/preceding-sibling::tagname_of_sibling_ele
                 web_element/following-sibling::tagname_of_sibling_ele[index_num]
 
 '''
-from selenium import webdriver
-
-opts = webdriver.ChromeOptions()
-opts.add_experimental_option("detach", True)
-
-driver = webdriver.Chrome(opts)
-
-driver.get("https://www.instagram.com/")
-
-## preceding-sibling
-driver.find_element('xpath', '//input[@name="username"]/preceding-sibling::span')
-
-## following-sibling
-driver.find_element('xpath', '//span[contains(text(), "Phone number")]/following-sibling::input')
+# from selenium import webdriver
+#
+# opts = webdriver.ChromeOptions()
+# opts.add_experimental_option("detach", True)
+#
+# driver = webdriver.Chrome(opts)
+#
+# driver.get("https://www.instagram.com/")
+#
+# ## preceding-sibling
+# driver.find_element('xpath', '//input[@name="username"]/preceding-sibling::span')
+#
+# ## following-sibling
+# driver.find_element('xpath', '//span[contains(text(), "Phone number")]/following-sibling::input')
 
 #########################################################################################################
 
@@ -654,19 +654,19 @@ ancestor    :   web_element/ancestor::tagname_of_ancestor_ele
                 web_element/ancestor::tagname_of_ancestor_ele[index_num]
 '''
 
-from selenium import webdriver
-
-opts = webdriver.ChromeOptions()
-opts.add_experimental_option("detach", True)
-
-driver = webdriver.Chrome(opts)
-
-driver.get('https://www.instagram.com/')
-time.sleep(2)
-driver.find_element('xpath', '//span[contains(text(), "Phone number")]/ancestor::div')
-
-## Incase of multiple occurances, we can do direct indexing
-driver.find_element('xpath', '//span[contains(text(), "Phone number")]/ancestor::div[n]')
+# from selenium import webdriver
+#
+# opts = webdriver.ChromeOptions()
+# opts.add_experimental_option("detach", True)
+#
+# driver = webdriver.Chrome(opts)
+#
+# driver.get('https://www.instagram.com/')
+# time.sleep(2)
+# driver.find_element('xpath', '//span[contains(text(), "Phone number")]/ancestor::div')
+#
+# ## Incase of multiple occurances, we can do direct indexing
+# driver.find_element('xpath', '//span[contains(text(), "Phone number")]/ancestor::div[n]')
 
 
 #########################################################################################################
@@ -675,25 +675,33 @@ descendant  :   web_element/descendant::tagname_of_descendant_ele
                 web_element/descendant::tagname_of_descendant_ele[index_num]
 '''
 
-from selenium import webdriver
-
-opts = webdriver.ChromeOptions()
-opts.add_experimental_option("detach", True)
-
-driver = webdriver.Chrome(opts)
-
-driver.get("https://www.instagram.com/")
-
-## locating the descendant elements using //
-driver.find_element('xpath', '//form[@id="loginForm"]//input[@name="username"]')
-
-## locating the descendants using descendant xpath
-driver.find_element('xpath', '//form[@id="loginForm"]/descendant::input')
-
+# from selenium import webdriver
+#
+# opts = webdriver.ChromeOptions()
+# opts.add_experimental_option("detach", True)
+#
+# driver = webdriver.Chrome(opts)
+#
+# driver.get("https://www.instagram.com/")
+#
+# ## locating the descendant elements using //
+# driver.find_element('xpath', '//form[@id="loginForm"]//input[@name="username"]')
+#
+# ## locating the descendants using descendant xpath
+# driver.find_element('xpath', '//form[@id="loginForm"]/descendant::input')
+#
 
 #########################################################################################################
 
+'''
+css selector vs xpath
 
+*   Cannot locate text using css selector               *   Can locate text using xpath
+*   Indexing is not possible                            *   Indexing is possible
+*   Backtraversing is not possible                      *   Backtraversing is possible in xpath
+*   Cannot locate dynamically changing elements         *   Can locate dynamically changing elements
+
+'''
 
 
 

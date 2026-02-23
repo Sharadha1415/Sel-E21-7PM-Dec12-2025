@@ -4,7 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b3411670-2f8e-4495-b787-cc583efe7772" name="Changes" comment="" />
+    <list default="true" id="b3411670-2f8e-4495-b787-cc583efe7772" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/locators_/_8_xpath.py" beforeDir="false" afterPath="$PROJECT_DIR$/locators_/_8_xpath.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/methods_/getter_methods.py" beforeDir="false" afterPath="$PROJECT_DIR$/methods_/getter_methods.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/py_sel_contents.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pytest_package/test_basics.py" beforeDir="false" afterPath="$PROJECT_DIR$/pytest_package/test_basics.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/questions" beforeDir="false" afterPath="$PROJECT_DIR$/questions" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/training/actionchains__.py" beforeDir="false" afterPath="$PROJECT_DIR$/training/actionchains__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/training/file_upload_popup.py" beforeDir="false" afterPath="$PROJECT_DIR$/training/file_upload_popup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/training/frames_.py" beforeDir="false" afterPath="$PROJECT_DIR$/training/frames_.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/training/synchronization_.py" beforeDir="false" afterPath="$PROJECT_DIR$/training/synchronization_.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/x.py" beforeDir="false" afterPath="$PROJECT_DIR$/x.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,6 +59,7 @@
     "Python.action_methods.executor": "Run",
     "Python.actionchains__.executor": "Run",
     "Python.alerts_.executor": "Run",
+    "Python.assert_keyword.executor": "Run",
     "Python.basics (1).executor": "Run",
     "Python.basics.executor": "Run",
     "Python.browser_methods.executor": "Run",
@@ -58,6 +72,7 @@
     "Python.listboxes_dropdowns.executor": "Run",
     "Python.location_size_methods.executor": "Run",
     "Python.read_excel.executor": "Run",
+    "Python.read_properties_file.executor": "Run",
     "Python.reading_excel.executor": "Run",
     "Python.reading_tables.executor": "Run",
     "Python.register.executor": "Run",
@@ -68,16 +83,16 @@
     "Python.writing_excel.executor": "Run",
     "Python.x.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "e01a3972",
-    "last_opened_file_path": "C:/Users/Ramya/PycharmProjects/Sel-E21-Dec12-7PM/pytest_package",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/Ramya/PycharmProjects/Sel-E21-Dec12-7PM",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Ramya\PycharmProjects\Sel-E21-Dec12-7PM" />
       <recent name="C:\Users\Ramya\PycharmProjects\Sel-E21-Dec12-7PM\pytest_package" />
       <recent name="C:\Users\Ramya\PycharmProjects\Sel-E21-Dec12-7PM\files_" />
-      <recent name="C:\Users\Ramya\PycharmProjects\Sel-E21-Dec12-7PM" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Ramya\PycharmProjects\Sel-E21-Dec12-7PM" />
@@ -87,8 +102,8 @@
       <recent name="C:\Users\Ramya\PycharmProjects\Sel-E21-Dec12-7PM\extra_files" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.learning_git">
-    <configuration name="learning_git" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.read_properties_file">
+    <configuration name="actionchains__" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Sel-E21-Dec12-7PM" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -97,11 +112,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/training" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/learning_git.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/training/actionchains__.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -110,7 +125,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="register" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="file_upload_popup" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Sel-E21-Dec12-7PM" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -119,11 +134,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ddt" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/training" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ddt/register.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/training/file_upload_popup.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -132,7 +147,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test_basics" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="frames_" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Sel-E21-Dec12-7PM" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -141,11 +156,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pytest_package" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/training" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\Ramya\PycharmProjects\Sel-E21-Dec12-7PM\pytest_package\test_basics.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/training/frames_.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -154,7 +169,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="x" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="getter_methods" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Sel-E21-Dec12-7PM" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -163,11 +178,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/methods_" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/x.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/methods_/getter_methods.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -176,28 +191,35 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests in test_basics.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="read_properties_file" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Sel-E21-Dec12-7PM" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pytest_package" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/property_file" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/pytest_package/test_basics.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/property_file/read_properties_file.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.learning_git" />
-        <item itemvalue="Python.x" />
-        <item itemvalue="Python tests.Python tests in test_basics.py" />
-        <item itemvalue="Python.test_basics" />
-        <item itemvalue="Python.register" />
+        <item itemvalue="Python.read_properties_file" />
+        <item itemvalue="Python.file_upload_popup" />
+        <item itemvalue="Python.actionchains__" />
+        <item itemvalue="Python.getter_methods" />
+        <item itemvalue="Python.frames_" />
       </list>
     </recent_temporary>
   </component>

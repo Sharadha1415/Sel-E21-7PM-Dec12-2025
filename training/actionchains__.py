@@ -143,11 +143,37 @@ pagedown and pageup scrolling
 # time.sleep(2)
 # driver.execute_script("window.scrollBy(0, -500);")       ## will scroll up by 500 pixels
 
+##---------------------------------------------------------------------------
+
+'''     scroll_by_amount()      '''
+
+# driver.get('https://www.myntra.com/')
+# time.sleep(2)
+#
+# ac_obj.scroll_by_amount(0, 1000).perform()
+
+##---------------------------------------------------------------------------
+
+'''     scroll from origin'''
+
+# from selenium.webdriver.common.actions.wheel_input import ScrollOrigin
+#
+# driver.get('https://www.myntra.com/')
+# time.sleep(2)
+#
+# ele = driver.find_element('xpath', '//h4[text()="RISING STARS"]')
+#
+# origin = ScrollOrigin.from_element(ele)
+#
+# ac_obj.scroll_from_origin(origin, 0, 2000).perform()
+
 #################################################################################################
 
 '''
 drag and drop
 '''
+
+## drag_and_drop
 
 # driver.get('https://testautomationpractice.blogspot.com/')
 # time.sleep(2)
@@ -160,6 +186,22 @@ drag and drop
 # droppable_ele = driver.find_element('xpath', '//div[@id="droppable"]')
 #
 # ac_obj.drag_and_drop(draggable_ele, droppable_ele).perform()
+
+##-------------------------------------------------------------------------
+
+# ## drag_and_drop_by_offset
+#
+# driver.get('https://testautomationpractice.blogspot.com/')
+# time.sleep(2)
+#
+# ele = driver.find_element('xpath', '//h2[text()="SVG Elements"]')
+# ac_obj.scroll_to_element(ele).perform()
+# time.sleep(1)
+#
+# draggable_ele = driver.find_element('xpath', '//div[@id="draggable"]')
+#
+# ac_obj.drag_and_drop_by_offset(draggable_ele, 100, 50).perform()
+
 
 #################################################################################################
 
