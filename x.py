@@ -17,6 +17,7 @@
 \t --> tab space
 
 '''
+import pytest
 
 ## raw strings
 
@@ -179,19 +180,19 @@ import time
 
 ####################################################################
 
-a = 10              ## global variable
-
-def display():
-    yield a
-    yield 10
-    yield 'hello'
-
-# print(display())
-
-for ele in display():
-    print(ele)
-print('hello world')
-n =4
+# a = 10              ## global variable
+#
+# def display():
+#     yield a
+#     yield 10
+#     yield 'hello'
+#
+# # print(display())
+#
+# for ele in display():
+#     print(ele)
+# print('hello world')
+# n =4
 # for i in range (n):
 #     print("* (n-i+1)+*(i-1))
 # for i in range (n-2, -1+1)):
@@ -200,9 +201,176 @@ n =4
 #     
 
 
+####################################################################
+
+from selenium import webdriver
+driver = webdriver.Chrome()
+
+'''switch the driver to the alert'''
+# alert_obj = driver.switch_to.alert
+# alert_obj.send_keys("nandini")
+# alert_obj.accept()
+# alert_obj.dismiss()
+#
+# 'https://username:password@url'
+
+##------------------------------------------------------------------
+
+# from selenium.webdriver.common.action_chains import ActionChains
+# from selenium.webdriver.common.keys import Keys
+#
+# ac = ActionChains(driver)
+# k = Keys()
+
+# ele = driver.find_element('', '')
+# ac.move_to_element(ele).perform()
+# ac.double_click(ele).perform()
+# ac.context_click(ele).perform()
+# ac.drag_and_drop('drag', 'drop').perform()
+# ac.drag_and_drop_by_offset(ele, 100, 100).perform()
+# ac.scroll_to_element(ele).perform()
+# ac.scroll_by_amount(0, 0).perform()
+# ac.send_keys(Keys.PAGE_DOWN).perform()
+# ac.send_keys(Keys.PAGE_UP).perform()
+# ac.send_keys(Keys.END).perform()
+# ac.send_keys(Keys.HOME).perform()
+#
+# ac.click_and_hold('slider').move_by_offset(100, 0).release().perform()
+#
+# ac.send_keys(Keys.ENTER).perform()
+# ac.send_keys(Keys.BACKSPACE).perform()
+# ac.send_keys(Keys.TAB).perform()
+# ac.send_keys(Keys.SPACE).perform()
+# ac.send_keys(Keys.DELETE).perform()
+# ac.send_keys(Keys.ENTER).perform()
+# ac.send_keys(Keys.CONTROL).perform()
+
+##------------------------------------------------------------------
+
+''' standard listboxes  - tagname is select     '''
+
+# from selenium.webdriver.support.select import Select
+#
+# listbox = driver.find_element('tag name', 'select')
+# select_obj = Select(listbox)
+#
+# select_obj.select_by_index(10)
+# select_obj.select_by_value("value")
+# select_obj.select_by_visible_text("text")
+#
+# select_obj.deselect_by_index(10)
+# select_obj.deselect_by_value("value")
+# select_obj.deselect_by_visible_text("text")
+#
+# select_obj.deselect_all()
+#
+# first = select_obj.first_selected_option
+# all = select_obj.all_selected_options
+# options = select_obj.options
+# select_obj.is_multiple()
+
+##------------------------------------------------------------------
+
+''' iframe  --> tagname of an iframe is always iframe   '''
+
+# frame = driver.find_element('tag name', 'iframe')
+#
+# ## switch the driver to the frame
+# driver.switch_to.frame(frame)
+#
+# ## perform the operations inside the frame
+#
+# ## switch back to the parent frame
+# driver.switch_to.parent_frame()
+# driver.switch_to.default_content()
+
+##------------------------------------------------------------------
+'''     window handling     '''
+
+# ## switch the driver from the parent app to the child application
+#
+# handles = driver.window_handles     ## [handle1, handle2, handle3, handle4,..]
+#
+# driver.switch_to.window('')
+
+##------------------------------------------------------------------
+'''     synchronization    
+        *   unconditional   --> time.sleep(30) 
+        *   conditional     --> 
+            *   implicit    --> driver.implicitly_wait(30)
+            *   explicit    -->
+'''
+
+# from selenium.webdriver.support.ui import WebDriverWait
+# from selenium.webdriver.support import expected_conditions
+#
+# wait = WebDriverWait(driver, 10, poll_frequency=2, ignored_exceptions=[])
+# # wait.until(expected_conditions.condition)
+
+##------------------------------------------------------------------
+'''
+xlrd    :   import xlrd
+            workbook = xlrd.open_workbbok("path")               ## book object
+            worksheet = workbook.sheet_by_name("SheetName")     ## sheet object
+            convert the sheet object to the generator object
+            rows = worksheet.get_rows()                         ## generator object
+            Traverse/typecast/next()
+'''
+
+##------------------------------------------------------------------
+
+'''
+openpyxl    :   from openpyxl import Workbook
+                workbook = Workbook()           ## create an excel file
+                worksheet = workbook.active     ## initialize the active worksheet
+                title = worksheet.title         ## set the title(optional)
+                worksheet[A1] = 'data1'
+                worksheet[A2] = 'data2'
+                
+                data_list = [[], [], []]
+                
+                for data in data_list:
+                    worksheet.append(data)
+                
+                workbook.save("filename.xlsx")
+                workbook.save(r"location\excel_name.xlsx")
+'''
+
+##------------------------------------------------------------------
+'''
+pytest  :   unit testing framework
+            *   filename --> test_filename.py   or filename_test.py
+            *   function --> test_func()
+            *   class    --> class TestClassname:
+                                pass
+
+'''
+
+# @pytest.fixture(autouse=True, scope='class')
+# def setup():
+#     pass
+#     yield
+#     pass
 
 
+# @pytest.mark.sanity
+# def test_func1():
+#     pass
+#
+# ## pytest test_filename.py -vs -m="markername"
 
+
+# @pytest.mark.skipif('condition', reason='')
+# def test_func1():
+#     pass
+
+# @pytest.mark.xfail
+# def test_func1():
+#     pass
+
+# @pytest.mark.parametrize("formal", [("")])
+# def test_func1(formal):
+#     pass
 
 
 

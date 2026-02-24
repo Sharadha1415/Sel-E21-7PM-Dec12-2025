@@ -144,8 +144,8 @@ time.sleep(2)
 
 ######################################################################################################
 
-## push notifications
-
+# ## push notifications
+#
 # ## Chrome
 # from selenium import webdriver
 #
@@ -159,10 +159,10 @@ time.sleep(2)
 # time.sleep(2)
 #
 # driver.find_element('xpath', '//button[text()="OK"]').click()
-
-
-##-----------------------------------------------------------------------
-
+#
+#
+# ##-----------------------------------------------------------------------
+#
 # ## Firefox
 # from selenium import webdriver
 #
@@ -176,9 +176,9 @@ time.sleep(2)
 # time.sleep(2)
 #
 # driver.find_element('xpath', '//button[text()="OK"]').click()
-
-##-----------------------------------------------------------------------
-
+#
+# ##-----------------------------------------------------------------------
+#
 # ## Edge
 # from selenium import webdriver
 #
@@ -195,35 +195,35 @@ time.sleep(2)
 
 ######################################################################################################
 
-## Confirmation alert
-
-from selenium import webdriver
-
-opts = webdriver.ChromeOptions()
-opts.add_experimental_option("detach", True)
-
-driver = webdriver.Chrome(opts)
-
-driver.get('https://testautomationpractice.blogspot.com/')
-time.sleep(2)
-driver.find_element("xpath", '//button[text()="Confirmation Alert"]').click()       ## gives alert
-time.sleep(2)
-
-
-def handle_alert(userinput):
-    alert_obj = driver.switch_to.alert
-    if userinput == 'accept':
-        alert_obj.accept()
-    elif userinput == 'dismiss':
-        alert_obj.dismiss()
-
-
-handle_alert("accept")
-time.sleep(2)
-driver.find_element("xpath", '//button[text()="Confirmation Alert"]').click()       ## gives alert
-time.sleep(2)
-handle_alert("dismiss")
-time.sleep(2)
+# ## Confirmation alert
+#
+# from selenium import webdriver
+#
+# opts = webdriver.ChromeOptions()
+# opts.add_experimental_option("detach", True)
+#
+# driver = webdriver.Chrome(opts)
+#
+# driver.get('https://testautomationpractice.blogspot.com/')
+# time.sleep(2)
+# driver.find_element("xpath", '//button[text()="Confirmation Alert"]').click()       ## gives alert
+# time.sleep(2)
+#
+#
+# def handle_alert(userinput):
+#     alert_obj = driver.switch_to.alert
+#     if userinput == 'accept':
+#         alert_obj.accept()
+#     elif userinput == 'dismiss':
+#         alert_obj.dismiss()
+#
+#
+# handle_alert("accept")
+# time.sleep(2)
+# driver.find_element("xpath", '//button[text()="Confirmation Alert"]').click()       ## gives alert
+# time.sleep(2)
+# handle_alert("dismiss")
+# time.sleep(2)
 
 
 

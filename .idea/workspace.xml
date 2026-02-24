@@ -5,17 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b3411670-2f8e-4495-b787-cc583efe7772" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/locators_/_8_xpath.py" beforeDir="false" afterPath="$PROJECT_DIR$/locators_/_8_xpath.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/methods_/getter_methods.py" beforeDir="false" afterPath="$PROJECT_DIR$/methods_/getter_methods.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/py_sel_contents.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pytest_package/test_basics.py" beforeDir="false" afterPath="$PROJECT_DIR$/pytest_package/test_basics.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/questions" beforeDir="false" afterPath="$PROJECT_DIR$/questions" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/training/actionchains__.py" beforeDir="false" afterPath="$PROJECT_DIR$/training/actionchains__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/training/file_upload_popup.py" beforeDir="false" afterPath="$PROJECT_DIR$/training/file_upload_popup.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/training/frames_.py" beforeDir="false" afterPath="$PROJECT_DIR$/training/frames_.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/training/synchronization_.py" beforeDir="false" afterPath="$PROJECT_DIR$/training/synchronization_.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/training/alerts_.py" beforeDir="false" afterPath="$PROJECT_DIR$/training/alerts_.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/x.py" beforeDir="false" afterPath="$PROJECT_DIR$/x.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,49 +36,49 @@
     <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python tests.Python tests in test_basics.py.executor": "Run",
-    "Python._1_id.executor": "Run",
-    "Python._2_name.executor": "Run",
-    "Python._3_classname.executor": "Run",
-    "Python._4_tagname.executor": "Run",
-    "Python._5_linktext.executor": "Run",
-    "Python._6_partial_linktext.executor": "Run",
-    "Python._7_css_selector.executor": "Run",
-    "Python._8_xpath.executor": "Run",
-    "Python.action_methods.executor": "Run",
-    "Python.actionchains__.executor": "Run",
-    "Python.alerts_.executor": "Run",
-    "Python.assert_keyword.executor": "Run",
-    "Python.basics (1).executor": "Run",
-    "Python.basics.executor": "Run",
-    "Python.browser_methods.executor": "Run",
-    "Python.calender_handling.executor": "Run",
-    "Python.file_upload_popup.executor": "Run",
-    "Python.findelements__.executor": "Run",
-    "Python.frames_.executor": "Run",
-    "Python.getter_methods.executor": "Run",
-    "Python.learning_git.executor": "Run",
-    "Python.listboxes_dropdowns.executor": "Run",
-    "Python.location_size_methods.executor": "Run",
-    "Python.read_excel.executor": "Run",
-    "Python.read_properties_file.executor": "Run",
-    "Python.reading_excel.executor": "Run",
-    "Python.reading_tables.executor": "Run",
-    "Python.register.executor": "Run",
-    "Python.s.executor": "Run",
-    "Python.synchronization_ (1).executor": "Run",
-    "Python.validation_methods.executor": "Run",
-    "Python.window_handling.executor": "Run",
-    "Python.writing_excel.executor": "Run",
-    "Python.x.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/Ramya/PycharmProjects/Sel-E21-Dec12-7PM",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python tests.Python tests in test_basics.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python._1_id.executor&quot;: &quot;Run&quot;,
+    &quot;Python._2_name.executor&quot;: &quot;Run&quot;,
+    &quot;Python._3_classname.executor&quot;: &quot;Run&quot;,
+    &quot;Python._4_tagname.executor&quot;: &quot;Run&quot;,
+    &quot;Python._5_linktext.executor&quot;: &quot;Run&quot;,
+    &quot;Python._6_partial_linktext.executor&quot;: &quot;Run&quot;,
+    &quot;Python._7_css_selector.executor&quot;: &quot;Run&quot;,
+    &quot;Python._8_xpath.executor&quot;: &quot;Run&quot;,
+    &quot;Python.action_methods.executor&quot;: &quot;Run&quot;,
+    &quot;Python.actionchains__.executor&quot;: &quot;Run&quot;,
+    &quot;Python.alerts_.executor&quot;: &quot;Run&quot;,
+    &quot;Python.assert_keyword.executor&quot;: &quot;Run&quot;,
+    &quot;Python.basics (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.basics.executor&quot;: &quot;Run&quot;,
+    &quot;Python.browser_methods.executor&quot;: &quot;Run&quot;,
+    &quot;Python.calender_handling.executor&quot;: &quot;Run&quot;,
+    &quot;Python.file_upload_popup.executor&quot;: &quot;Run&quot;,
+    &quot;Python.findelements__.executor&quot;: &quot;Run&quot;,
+    &quot;Python.frames_.executor&quot;: &quot;Run&quot;,
+    &quot;Python.getter_methods.executor&quot;: &quot;Run&quot;,
+    &quot;Python.learning_git.executor&quot;: &quot;Run&quot;,
+    &quot;Python.listboxes_dropdowns.executor&quot;: &quot;Run&quot;,
+    &quot;Python.location_size_methods.executor&quot;: &quot;Run&quot;,
+    &quot;Python.read_excel.executor&quot;: &quot;Run&quot;,
+    &quot;Python.read_properties_file.executor&quot;: &quot;Run&quot;,
+    &quot;Python.reading_excel.executor&quot;: &quot;Run&quot;,
+    &quot;Python.reading_tables.executor&quot;: &quot;Run&quot;,
+    &quot;Python.register.executor&quot;: &quot;Run&quot;,
+    &quot;Python.s.executor&quot;: &quot;Run&quot;,
+    &quot;Python.synchronization_ (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.validation_methods.executor&quot;: &quot;Run&quot;,
+    &quot;Python.window_handling.executor&quot;: &quot;Run&quot;,
+    &quot;Python.writing_excel.executor&quot;: &quot;Run&quot;,
+    &quot;Python.x.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Ramya/PycharmProjects/Sel-E21-Dec12-7PM&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Ramya\PycharmProjects\Sel-E21-Dec12-7PM" />
